@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.platform = :ios, "7.0"
   s.name     = 'AMSDK'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.license  = 'MIT'
   s.summary  = 'native ad SDK.'
   s.homepage = 'https://github.com/AMKaffiOS/AMSDK'
