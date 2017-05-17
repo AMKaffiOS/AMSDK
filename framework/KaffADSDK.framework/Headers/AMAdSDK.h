@@ -1,5 +1,5 @@
 //
-//  AMAdSDK.h
+//  AMAMAdSDK.h
 //  AMSDK
 //
 //  Created by zjw1 on 2017/1/6.

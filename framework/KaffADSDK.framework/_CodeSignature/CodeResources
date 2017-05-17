@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AMAdSDK.h</key>
 		<data>
-		yNwTYrMTnSD+lPc3CvgkQGV7pm0=
+		bm4AdR9FNI/7v7he4PpFtpD7VR8=
 		</data>
 		<key>Headers/AMError.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/AMNativeAd.h</key>
 		<data>
-		WXitFCYm0VTWlWa4LNAonDF7sd8=
+		7jdql6AywvhoJB3AhNClh2fi8Tg=
 		</data>
 		<key>Headers/AMNativeAdDelegate.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/AMNativeAdService.h</key>
 		<data>
-		M+VE5wzoA2wRAz/iLlL0MlEfBFg=
+		4H/M8ctOvqRuNTObMPZGG0mO0eE=
 		</data>
 		<key>Headers/KaffADSDK.h</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yNwTYrMTnSD+lPc3CvgkQGV7pm0=
+			bm4AdR9FNI/7v7he4PpFtpD7VR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			W/WVqpujGJQjtcnMlbldNrZG//yCEXGYbb27BC/q/Gs=
+			DeTVMt1Ojp9OJrRqkZh+4TMLJQYGD9PkYT93D6mb388=
 			</data>
 		</dict>
 		<key>Headers/AMError.h</key>
@@ -65,11 +65,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WXitFCYm0VTWlWa4LNAonDF7sd8=
+			7jdql6AywvhoJB3AhNClh2fi8Tg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kpgTd0ZFK/YfnYLYBiVARKQvlk1pRdwkkY/WUuFTI/M=
+			BC/uRI7BaXSopnkZm7I1dfvjmkd5LvNEqmZLUL9riJs=
 			</data>
 		</dict>
 		<key>Headers/AMNativeAdDelegate.h</key>
@@ -87,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M+VE5wzoA2wRAz/iLlL0MlEfBFg=
+			4H/M8ctOvqRuNTObMPZGG0mO0eE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hxgv+7BLgEmSR9p3JTGJhfz+Xnn5oo3ZL8FbA3aLNP4=
+			7XFIX1ddKFZV+HqGVreNx3HQFb1EUgxrB0aOMWlo+KI=
 			</data>
 		</dict>
 		<key>Headers/KaffADSDK.h</key>

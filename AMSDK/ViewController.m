@@ -19,6 +19,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *coverImgView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UIView *fbAdView;
+@property (weak, nonatomic) IBOutlet UIImageView *fbIconImgView;
+@property (weak, nonatomic) IBOutlet UILabel *fbTitleLabel;
+
+@property (nonatomic, strong) UIView *fbChoiceView;
+@property (nonatomic, strong) UIView *fbMediaView;
+
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
@@ -50,12 +57,51 @@
 
 - (void)reloadDataWithNativeAd:(AMNativeAd *)ad
 {
-    self.adView.hidden = NO;
     AMNativeAdService *service = [AMNativeAdService defaultService];
-    [self.coverImgView sd_setImageWithURL:[NSURL URLWithString:ad.coverUrl]];
-    self.titleLabel.text = ad.titile;
-    [service registerViewForInteraction:ad
-                     withClickableViews:@[self.titleLabel,self.coverImgView]];
+    
+    if (ad.amAdType == AMAltaAD) {
+        self.adView.hidden = NO;
+        self.fbAdView.hidden = YES;
+        [self.coverImgView sd_setImageWithURL:[NSURL URLWithString:ad.coverUrl]];
+        self.titleLabel.text = ad.titile;
+        [service registerViewForInteraction:ad
+                         withClickableViews:@[self.titleLabel,self.coverImgView]
+                                  currentVC:self];
+    }
+    else
+    {
+        if (self.fbChoiceView) {
+            [self.fbChoiceView removeFromSuperview];
+            [self.fbMediaView removeFromSuperview];
+        }
+        
+        self.adView.hidden = YES;
+        self.fbAdView.hidden = NO;
+        self.fbTitleLabel.text = ad.titile;
+        [self.fbIconImgView sd_setImageWithURL:[NSURL URLWithString:ad.iconUrl]];
+        self.fbChoiceView = [service fbChoiceViewWithNativeAd:ad];
+        self.fbMediaView = [service fbMediaViewWithNativeAd:ad];
+        if (self.fbMediaView) {
+            [self.fbAdView addSubview:self.fbMediaView];
+            [self.fbAdView addSubview:self.fbChoiceView];
+            
+            [self.fbMediaView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(self.fbAdView).offset(10);
+                make.right.bottom.equalTo(self.fbAdView).offset(-10);
+                make.top.equalTo(self.fbIconImgView.mas_bottom).offset(15);
+            }];
+            
+            [self.fbChoiceView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.right.equalTo(self.fbMediaView);
+                make.top.equalTo(self.fbIconImgView);
+                make.height.equalTo(@20);
+                make.width.equalTo(@75);
+            }];
+        }
+        [service registerViewForInteraction:ad
+                         withClickableViews:@[self.fbAdView]
+                                  currentVC:self];
+    }
     
 }
 
