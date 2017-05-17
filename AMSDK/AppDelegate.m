@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[AMAdSDK shareInstance] resgistWithAppkey:@"88e99858-cc3c-57f1-f0d5-8aa5e7a66d86"];
+    [[AMAdSDK shareInstance] resgistWithAppkey:@"app key"];
     [AMAdSDK shareInstance].debugEable = YES;
     
     return YES;

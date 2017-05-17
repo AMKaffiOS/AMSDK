@@ -42,7 +42,7 @@
     
     AMNativeAdService *adService = [AMNativeAdService defaultService];
     adService.delegate = self;
-    [adService loadAdsWithPlacementId:@"1662684189370000_1769833153868513" count:3];
+    [adService loadAdsWithPlacementId:@"pid" count:3];
 }
 
 
