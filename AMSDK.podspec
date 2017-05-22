@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.platform = :ios, "7.0"
   s.name     = 'AMSDK'
-  s.version  = '1.2.0'
+  s.version  = '1.1.1'
   s.license  = 'MIT'
   s.summary  = 'native ad SDK.'
   s.homepage = 'https://github.com/AMKaffiOS/AMSDK'
@@ -12,5 +12,4 @@ Pod::Spec.new do |s|
   s.source_files = 'framework/KaffADSDK.framework/Headers/*.h'
   s.frameworks = 'Foundation'
   s.library = 'sqlite3'
-  s.dependency 'FBAudienceNetwork'
 end

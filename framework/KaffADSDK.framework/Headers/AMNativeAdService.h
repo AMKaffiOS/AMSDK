@@ -23,14 +23,4 @@
 - (void)registerViewForInteraction:(AMNativeAd *)nativeAd
                 withClickableViews:(NSArray<UIView *> *)clickableViews;
 
-- (void)registerViewForInteraction:(AMNativeAd *)nativeAd
-                withClickableViews:(NSArray<UIView *> *)clickableViews
-                         currentVC:(UIViewController *)currentVC;
-
-/**
- * SDK 生成mediaview choiceview
- */
-- (UIView *)fbChoiceViewWithNativeAd:(AMNativeAd *)nativeAd;
-- (UIView *)fbMediaViewWithNativeAd:(AMNativeAd *)nativeAd;
-
 @end

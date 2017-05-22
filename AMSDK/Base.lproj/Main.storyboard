@@ -43,47 +43,19 @@
                                     <constraint firstItem="ZNb-Qe-kDh" firstAttribute="top" secondItem="e6d-hY-Z6j" secondAttribute="top" constant="10" id="6Sx-nD-m2T"/>
                                     <constraint firstAttribute="trailing" secondItem="5UV-VK-tCv" secondAttribute="trailing" constant="10" id="747-1J-wPX"/>
                                     <constraint firstItem="5UV-VK-tCv" firstAttribute="top" secondItem="ZNb-Qe-kDh" secondAttribute="bottom" constant="7.5" id="LLH-AM-OrX"/>
+                                    <constraint firstAttribute="width" secondItem="e6d-hY-Z6j" secondAttribute="height" multiplier="16:9" constant="-60" id="SIc-gP-mlq"/>
                                     <constraint firstItem="ZNb-Qe-kDh" firstAttribute="leading" secondItem="e6d-hY-Z6j" secondAttribute="leading" constant="10" id="aC7-ZV-4ci"/>
                                     <constraint firstAttribute="trailing" secondItem="ZNb-Qe-kDh" secondAttribute="trailing" constant="10" id="cww-Wg-6hv"/>
                                     <constraint firstItem="5UV-VK-tCv" firstAttribute="leading" secondItem="e6d-hY-Z6j" secondAttribute="leading" constant="10" id="r7P-6D-KWJ"/>
-                                </constraints>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-BG-8DL">
-                                <rect key="frame" x="0.0" y="84" width="375" height="245"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-im-5Ri">
-                                        <rect key="frame" x="10" y="7" width="38" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="3ua-wU-jBL"/>
-                                            <constraint firstAttribute="width" constant="38" id="hrt-yJ-MJY"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whT-lq-YLM">
-                                        <rect key="frame" x="58" y="16" width="222" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="whT-lq-YLM" firstAttribute="leading" secondItem="h0I-im-5Ri" secondAttribute="trailing" constant="10" id="Q4h-JM-B7C"/>
-                                    <constraint firstItem="h0I-im-5Ri" firstAttribute="leading" secondItem="QN7-BG-8DL" secondAttribute="leading" constant="10" id="RRy-g7-ht4"/>
-                                    <constraint firstItem="whT-lq-YLM" firstAttribute="centerY" secondItem="h0I-im-5Ri" secondAttribute="centerY" id="bnX-lh-aQW"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="whT-lq-YLM" secondAttribute="trailing" constant="95" id="xhF-2A-Vyx"/>
-                                    <constraint firstItem="h0I-im-5Ri" firstAttribute="top" secondItem="QN7-BG-8DL" secondAttribute="top" constant="7" id="yGd-tZ-bZX"/>
+                                    <constraint firstAttribute="width" secondItem="e6d-hY-Z6j" secondAttribute="height" multiplier="16:9" constant="-60" id="yyU-OT-dFG"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QN7-BG-8DL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="7OM-Z3-yEd"/>
                             <constraint firstItem="e6d-hY-Z6j" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="8fA-gU-62s"/>
                             <constraint firstAttribute="trailing" secondItem="e6d-hY-Z6j" secondAttribute="trailing" id="9Yc-jp-TVc"/>
-                            <constraint firstItem="QN7-BG-8DL" firstAttribute="width" secondItem="QN7-BG-8DL" secondAttribute="height" multiplier="16:9" constant="-60" id="CHH-8R-iD4"/>
-                            <constraint firstAttribute="trailing" secondItem="QN7-BG-8DL" secondAttribute="trailing" id="Qqg-Jy-lE4"/>
                             <constraint firstItem="e6d-hY-Z6j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WQB-dp-ECr"/>
-                            <constraint firstItem="QN7-BG-8DL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iaA-yY-ykn"/>
                             <constraint firstItem="e6d-hY-Z6j" firstAttribute="width" secondItem="e6d-hY-Z6j" secondAttribute="height" multiplier="16:9" constant="-60" id="v1F-Ub-a8n"/>
                         </constraints>
                     </view>
@@ -104,9 +76,6 @@
                     <connections>
                         <outlet property="adView" destination="e6d-hY-Z6j" id="FoT-Lp-lhr"/>
                         <outlet property="coverImgView" destination="ZNb-Qe-kDh" id="d3L-A8-Wil"/>
-                        <outlet property="fbAdView" destination="QN7-BG-8DL" id="9bY-AT-hJr"/>
-                        <outlet property="fbIconImgView" destination="h0I-im-5Ri" id="6Rw-bQ-pk9"/>
-                        <outlet property="fbTitleLabel" destination="whT-lq-YLM" id="BPv-cM-wLe"/>
                         <outlet property="loadBtn" destination="5Mr-qv-mud" id="pXm-1N-6C2"/>
                         <outlet property="titleLabel" destination="5UV-VK-tCv" id="bsH-R6-NxI"/>
                     </connections>

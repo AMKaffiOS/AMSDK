@@ -7,14 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-@class FBNativeAd;
-
-typedef NS_ENUM(NSInteger, AMAdType) {
-    AMAltaAD = 0,
-    AMFBAD,
-};
 
 @interface AMNativeAd : NSObject
+
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
 
 /**
  * placementId
@@ -61,14 +58,5 @@ typedef NS_ENUM(NSInteger, AMAdType) {
  * APP包名
  */
 @property (nonatomic, strong) NSString *packageName;
-
-/**
- 广告类型
- */
-@property (nonatomic, assign) AMAdType amAdType;
-
-
-- (instancetype)initWithDict:(NSDictionary *)dict;
-- (instancetype)initWithFBNativeAd:(FBNativeAd *)fbNativeAd;
 
 @end
